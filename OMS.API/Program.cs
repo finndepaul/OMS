@@ -1,4 +1,5 @@
 
+using OMS.Infrastructure.Extensions;
 namespace OMS.API
 {
     public class Program
@@ -13,6 +14,12 @@ namespace OMS.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            // Auto mapper
+            builder.Services.AddApplication();
+
+            // DI
+            builder.Services.AddEventBus(builder.Configuration);
 
             var app = builder.Build();
 
