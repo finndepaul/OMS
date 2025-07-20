@@ -7,3 +7,5 @@
 -> add-migration [đặt tên cho migration] -context OMSReadOnlyDbContext
 -> add-migration [đặt tên cho migration] -context OMSReadWriteDbContext
 -> update-database [tên migration của db OMSReadWriteDbContext] -context OMSReadWriteDbContext
+# ERD:
+- https://dbdiagram.io/d/OMS-687d1510f413ba3508c02b3f
